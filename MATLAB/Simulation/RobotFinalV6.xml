@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SimscapeMultibodyImportXML xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+   <Created by="Jakob Yde-Madsen" from="Onshape" on="05/21/18||14:10:58" using="Simscape Multibody Exporter"/>
+   <ModelUnits length="millimeter" mass="kilogram"/>
+   <DataUnits length="meter" mass="kilogram"/>
+   <RootAssembly name="RobotFinal v6" uid="f33288ba2c6ed46a68ca246e" version="w-9e19d63296303e3972dc4bfc">
+      <InstanceTree>
+         <Instance entityUid="JFH*:*57694abdacdf6b5618543e18" name="singleelementpan v5 &lt;1&gt;" uid="MMCcfHkTaiPnO0sSz">
+            <Transform>
+               <Rotation>-0.000000000 -1.000000000 -0.000000000 1.000000000 -0.000000000 -0.000000000 0.000000000 -0.000000000 1.000000000 </Rotation>
+               <Translation>-0.095560539 -0.276414343 0.240582372 </Translation>
+            </Transform>
+         </Instance>
+         <Instance entityUid="75b9534444f8af6b75591ea8" name="singleelementtilt v6 &lt;1&gt;" rigidGroup="root.M+IqJo9lo+lHgEasU" uid="MXGk9mv5IRYI5KCXk">
+            <Transform>
+               <Rotation>-0.000000000 -1.000000000 0.000000000 1.000000000 -0.000000000 -0.000000000 0.000000000 -0.000000000 1.000000000 </Rotation>
+               <Translation>-0.232093212 -0.205612483 -0.008447859 </Translation>
+            </Transform>
+            <Instance entityUid="JFL*:*57694abdacdf6b5618543e18" name="Component1 &lt;1&gt;" uid="Mc1gIuMh1P0tz3Qa5">
+               <Transform>
+                  <Rotation>1.000000000 0.000000000 -0.000000000 0.000000000 -0.000000000 1.000000000 0.000000000 -1.000000000 -0.000000000 </Rotation>
+                  <Translation>-0.021313024 -0.134070347 0.460093827 </Translation>
+               </Transform>
+            </Instance>
+            <Instance entityUid="JFP*:*57694abdacdf6b5618543e18" name="Component1 &lt;1&gt;" uid="MP1Q9bpe87duwt7LU">
+               <Transform>
+                  <Rotation>1.000000000 0.000000000 -0.000000000 0.000000000 -0.000000000 1.000000000 0.000000000 -1.000000000 -0.000000000 </Rotation>
+                  <Translation>-0.021313024 -0.134070347 0.460093827 </Translation>
+               </Transform>
+            </Instance>
+            <Instance entityUid="JFT*:*57694abdacdf6b5618543e18" name="Component1 &lt;1&gt;" uid="MDy4jGSTKPBZja1mE">
+               <Transform>
+                  <Rotation>1.000000000 0.000000000 -0.000000000 0.000000000 -0.000000000 1.000000000 0.000000000 -1.000000000 -0.000000000 </Rotation>
+                  <Translation>-0.021313024 -0.134070347 0.460093827 </Translation>
+               </Transform>
+            </Instance>
+         </Instance>
+         <Instance entityUid="JFD*:*57694abdacdf6b5618543e18" name="singleelementbottom v2 &lt;1&gt;" uid="MyiyGxEp1YhicYz7n">
+            <Transform>
+               <Rotation>1.000000000 0.000000000 0.000000000 -0.000000000 1.000000000 -0.000000000 -0.000000000 0.000000000 1.000000000 </Rotation>
+               <Translation>-0.048362539 -0.162364343 -0.010393107 </Translation>
+            </Transform>
+         </Instance>
+      </InstanceTree>
+      <Constraints/>
+      <Joints>
+         <Revolute name="Revolute1">
+            <BaseFrame>
+               <InstancePath>
+                  <Uid>MyiyGxEp1YhicYz7n</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 0.000000000 0.000000000 0.000000000 -1.000000000 0.000000000 0.000000000 0.000000000 -1.000000000 </Rotation>
+                  <Translation>-0.069703000 -0.114050000 0.188538048 </Translation>
+               </Transform>
+            </BaseFrame>
+            <FollowerFrame>
+               <InstancePath>
+                  <Uid>MMCcfHkTaiPnO0sSz</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>0.000000000 -1.000000000 -0.000000000 -1.000000000 -0.000000000 0.000000000 -0.000000000 0.000000000 -1.000000000 </Rotation>
+                  <Translation>0.000000000 0.022505000 -0.062437431 </Translation>
+               </Transform>
+            </FollowerFrame>
+         </Revolute>
+         <Revolute name="Revolute2">
+            <BaseFrame>
+               <InstancePath>
+                  <Uid>MMCcfHkTaiPnO0sSz</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>0.000000000 0.000000000 1.000000000 0.000000000 1.000000000 -0.000000000 -1.000000000 0.000000000 0.000000000 </Rotation>
+                  <Translation>0.196096196 0.022500000 0.216563000 </Translation>
+               </Transform>
+            </BaseFrame>
+            <FollowerFrame>
+               <InstancePath>
+                  <Uid>MXGk9mv5IRYI5KCXk</Uid>
+                  <Uid>MP1Q9bpe87duwt7LU</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>-0.000000000 -0.000000000 1.000000000 1.000000000 0.000000000 0.000000000 -0.000000000 1.000000000 0.000000000 </Rotation>
+                  <Translation>0.146607361 -0.005499403 0.020037674 </Translation>
+               </Transform>
+            </FollowerFrame>
+         </Revolute>
+      </Joints>
+   </RootAssembly>
+   <Assemblies>
+      <Assembly name="singleelementtilt v6" uid="75b9534444f8af6b75591ea8">
+         <ModelUnits length="millimeter" mass="kilogram"/>
+         <Constraints/>
+         <Joints/>
+      </Assembly>
+   </Assemblies>
+   <Parts>
+      <Part name="singleelementbottom v2" uid="JFD*:*57694abdacdf6b5618543e18">
+         <ModelUnits length="millimeter" mass="kilogram"/>
+         <MassProperties>
+            <Mass>1.92897609</Mass>
+            <CenterOfMass>-0.069702747 0.000706440 0.174394190 </CenterOfMass>
+            <Inertia>0.063414409 0.052809370 0.096996952 -0.002035126 -0.000000015 -0.000000051 </Inertia>
+         </MassProperties>
+         <GeometryFile name="singleelementbottom v2.step" type="STEP"/>
+         <VisualProperties>
+            <Ambient a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Diffuse a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Specular a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Emissive a="1" b="0" g="0" r="0"/>
+            <Shininess>0.5</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="singleelementpan v5" uid="JFH*:*57694abdacdf6b5618543e18">
+         <ModelUnits length="millimeter" mass="kilogram"/>
+         <MassProperties>
+            <Mass>0.649999956</Mass>
+            <CenterOfMass>-0.000000699 0.022495098 0.084396454 </CenterOfMass>
+            <Inertia>0.003957272 0.019703954 0.015986866 0.000000033 0.000000142 -0.000000030 </Inertia>
+         </MassProperties>
+         <GeometryFile name="singleelementpan v5.step" type="STEP"/>
+         <VisualProperties>
+            <Ambient a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Diffuse a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Specular a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Emissive a="1" b="0" g="0" r="0"/>
+            <Shininess>0.5</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="Component1" uid="JFL*:*57694abdacdf6b5618543e18">
+         <ModelUnits length="millimeter" mass="kilogram"/>
+         <MassProperties>
+            <Mass>0.0190749324</Mass>
+            <CenterOfMass>-0.204202610 -0.005636898 0.020012378 </CenterOfMass>
+            <Inertia>0.000000238 0.000019004 0.000019005 -0.000000000 -0.000000000 -0.000000000 </Inertia>
+         </MassProperties>
+         <GeometryFile name="Component1.step" type="STEP"/>
+         <VisualProperties>
+            <Ambient a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Diffuse a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Specular a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Emissive a="1" b="0" g="0" r="0"/>
+            <Shininess>0.5</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="Component1" uid="JFP*:*57694abdacdf6b5618543e18">
+         <ModelUnits length="millimeter" mass="kilogram"/>
+         <MassProperties>
+            <Mass>0.0190724325</Mass>
+            <CenterOfMass>0.104797996 -0.005636958 0.020012396 </CenterOfMass>
+            <Inertia>0.000000238 0.000019003 0.000019003 0.000000000 0.000000000 -0.000000000 </Inertia>
+         </MassProperties>
+         <GeometryFile name="Component11.step" type="STEP"/>
+         <VisualProperties>
+            <Ambient a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Diffuse a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Specular a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Emissive a="1" b="0" g="0" r="0"/>
+            <Shininess>0.5</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="Component1" uid="JFT*:*57694abdacdf6b5618543e18">
+         <ModelUnits length="millimeter" mass="kilogram"/>
+         <MassProperties>
+            <Mass>0.79999961</Mass>
+            <CenterOfMass>-0.049702749 -0.005636688 0.020019203 </CenterOfMass>
+            <Inertia>0.008603789 0.008088141 0.016453564 -0.000000015 0.000000013 0.000000003 </Inertia>
+         </MassProperties>
+         <GeometryFile name="Component12.step" type="STEP"/>
+         <VisualProperties>
+            <Ambient a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Diffuse a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Specular a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Emissive a="1" b="0" g="0" r="0"/>
+            <Shininess>0.5</Shininess>
+         </VisualProperties>
+      </Part>
+   </Parts>
+</SimscapeMultibodyImportXML>
